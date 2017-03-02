@@ -65,8 +65,6 @@ activity <- read.csv("./activity.csv")
 stepsPerDay <- aggregate(steps ~ date, activity, sum)
 hist(stepsPerDay$steps, main = "Total number of steps per day", xlab="Number Of Steps per Day",col="grey")
 
-## or ggplot(stepsPerDay, aes(steps)) + geom_histogram(bins=5)
-
 ```
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
