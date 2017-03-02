@@ -63,10 +63,6 @@ hist(stepsPerDay$steps, main = "Total number of steps per day", xlab="Number Of 
 
 ![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)
 
-```r
-## or ggplot(stepsPerDay, aes(steps)) + geom_histogram(bins=5)
-```
-
 2. Calculate and report the **mean** and **median** total number of steps taken per day
 - the mean value of the total number of steps per day ....
 
