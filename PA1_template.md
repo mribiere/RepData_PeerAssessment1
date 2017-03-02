@@ -61,7 +61,7 @@ stepsPerDay <- aggregate(steps ~ date, activity, sum)
 hist(stepsPerDay$steps, main = "Total number of steps per day", xlab="Number Of Steps per Day",col="grey")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)
+![](unnamed-chunk-1-1.png)
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
 - the mean value of the total number of steps per day ....
@@ -86,7 +86,7 @@ abline(v=meanSteps,lty=1,lwd=2,col="Magenta")
 abline(v=medianSteps,lty=2,lwd=2,col="Cyan")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)
+![](unnamed-chunk-4-1.png)
 
 
 ## What is the average daily activity pattern?
@@ -99,7 +99,7 @@ stepsByInterval <- aggregate(steps ~ interval,activity,mean)
 plot(stepsByInterval$interval,stepsByInterval$steps, type="l", xlab="Interval",ylab="average number of steps taken, averaged across all days")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
+![](unnamed-chunk-5-1.png)
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -188,7 +188,7 @@ abline(v=meanSteps_WONA,lty=1,lwd=2,col="Magenta")
 abline(v=medianSteps_WONA,lty=2,lwd=2,col="Cyan")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)
+![](unnamed-chunk-12-1.png)
 
 The impact on the estimates of the total daily number of steps can be seen in the summary of the different dataframes.
 
@@ -251,6 +251,6 @@ plot(stepsByIntervalweekday$interval,stepsByIntervalweekday$steps, type="l", xla
 plot(stepsByIntervalweekend$interval,stepsByIntervalweekend$steps, type="l", xlab="Interval",ylab="Number of steps",main="weekend")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)
+![](unnamed-chunk-15-1.png)
 
 We can observe that people have more activities during the week-end. 
